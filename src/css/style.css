@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Noto+Sans+KR:wght@400;500&family=Overpass:wght@300;600&family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Noto+Sans+KR:wght@400;500&family=Overpass:wght@300;600;700&family=Ubuntu:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.header {
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(356deg, 100%, 66%);
+}
+.header .bg {
+  width: 100vw;
+  height: 25rem;
+  background-color: hsl(356deg, 100%, 66%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 50px;
+  z-index: -1;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 7px 15px;
+  border: none;
+  background: none;
+}
+
+.btn_One {
+  background-color: #fff;
+  color: hsl(356deg, 100%, 66%);
+  border-radius: 15px;
+}
+.btn_One:hover {
+  background-color: hsl(13deg, 100%, 72%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: transparent;
+}
+.navbar .logo {
+  justify-self: flex-start;
+}
+.navbar .logo img {
+  width: 70px;
+  margin-top: 0.5rem;
+}
+.navbar .mobile {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+.navbar .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.navbar .links .link {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar .links .link:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+.navbar .links .extension {
+  display: flex;
+  align-items: center;
+}
+.navbar .links .extension .arrow {
+  margin-left: 5px;
+  margin-bottom: 0.2rem;
+}
+.navbar .buttons {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
