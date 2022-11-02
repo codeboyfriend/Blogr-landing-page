@@ -3,6 +3,8 @@ import { BlogrProvider } from "./Context/GlobalContext";
 import Header from "./components/Header";
 import Main from "./components/sub_com/Main";
 import Section from "./components/sub_com/Section";
+import Article from "./components/sub_com/Article";
+import Footer from "./components/sub_com/Footer";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Header />
         <Main />
         <Section />
+        <Article />
+        <Footer />
       </div>
     </BlogrProvider>
   )

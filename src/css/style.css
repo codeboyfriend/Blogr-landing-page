@@ -6,6 +6,19 @@
   overflow-x: hidden;
 }
 
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: hsl(356deg, 100%, 66%);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: hsl(240deg, 2%, 79%);
+  border-radius: 5rem;
+}
+
 .container {
   background-color: hsl(0deg, 0%, 100%);
   font-family: "Overpass", sans-serif;
@@ -198,4 +211,29 @@
 .section .box .right p {
   line-height: 1.5em;
   padding-right: 100px;
+}
+
+.footer {
+  background-color: hsl(240deg, 10%, 16%);
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  justify-content: space-around;
+  border-top-right-radius: 50px;
+  padding: 70px 50px;
+}
+.footer .logo img {
+  width: 70px;
+}
+.footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.footer p {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer p:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

@@ -19,6 +19,19 @@ $veryDarkBlueGrad: hsl(237, 23%, 32%);
     overflow-x: hidden;
 }
 
+html::-webkit-scrollbar{
+    width: .5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: $lightRed;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $grayishBlue;
+    border-radius: 5rem;
+}
+
 .container {
     background-color: $white;
     font-family: 'Overpass', sans-serif;
@@ -236,6 +249,35 @@ $veryDarkBlueGrad: hsl(237, 23%, 32%);
                 line-height: 1.5em;
                 padding-right: 100px;
             }
+        }
+    }
+}
+
+.footer {
+    background-color: $veryDarkBlackBlue;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    border-top-right-radius: 50px;
+    padding: 70px 50px;
+
+    .logo img{
+        width: 70px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        margin-bottom: .5rem;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+            text-decoration: underline;
         }
     }
 }
