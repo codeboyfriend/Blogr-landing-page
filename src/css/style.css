@@ -167,9 +167,35 @@
 }
 
 .section {
-  height: 15rem;
+  height: 40rem;
+  padding: 10px 0;
+  position: relative;
 }
 .section .bg {
-  height: 15rem;
-  background-color: hsl(240deg, 10%, 16%);
+  height: 24rem;
+  width: 100%;
+  background-color: hsl(237deg, 17%, 21%);
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+.section .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.section .box .right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.section .box .right p {
+  line-height: 1.5em;
+  padding-right: 100px;
 }/*# sourceMappingURL=style.css.map */
