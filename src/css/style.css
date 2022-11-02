@@ -1,54 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Noto+Sans+KR:wght@400;500&family=Overpass:wght@300;600&family=Ubuntu:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Noto+Sans+KR:wght@400;500&family=Overpass:wght@300;600;700&family=Ubuntu:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   background-color: hsl(0deg, 0%, 100%);
+  font-family: "Overpass", sans-serif;
 }
 
-.header {
-  color: hsl(0deg, 0%, 100%);
-  background: hsl(356deg, 100%, 66%);
-}
-.header .bg {
-  width: 100vw;
-  height: 25rem;
-  background-color: hsl(356deg, 100%, 66%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-bottom-left-radius: 50px;
-  z-index: -1;
+.buttons {
+  display: flex;
 }
 
 .btn {
   cursor: pointer;
   padding: 7px 15px;
   border: none;
-  background: none;
-}
-
-.btn_One {
-  background-color: #fff;
-  color: hsl(356deg, 100%, 66%);
   border-radius: 15px;
+  background: none;
+  transition: all 0.5s;
 }
-.btn_One:hover {
+.btn:hover {
   background-color: hsl(13deg, 100%, 72%);
   color: hsl(0deg, 0%, 100%);
 }
 
+.btn_One {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(356deg, 100%, 66%);
+}
+
+.header {
+  color: hsl(0deg, 0%, 100%);
+  background: rgba(0, 0, 0, 0);
+  height: 24rem;
+}
+.header .bg {
+  width: 100vw;
+  height: 24rem;
+  background-color: hsl(356deg, 100%, 66%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 50px;
+}
+.header .bg_image {
+  background: url(../assets/images/bg-pattern-intro-desktop.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 24rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header_text {
+  width: 100%;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 5rem;
+}
+.header_text h2 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.header_text p {
+  margin-bottom: 2rem;
+}
+
 .navbar {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .navbar .logo {
   justify-self: flex-start;
@@ -86,6 +126,50 @@
   margin-left: 5px;
   margin-bottom: 0.2rem;
 }
-.navbar .buttons {
-  display: flex;
+
+.main {
+  width: 100vw;
+  color: hsl(240deg, 10%, 16%);
+  position: relative;
+}
+.main h2 {
+  text-align: center;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.main .box .left_box {
+  padding: 0 7rem;
+}
+.main .box .left_box h3 {
+  font-weight: 600;
+  font: 0.9rem;
+  margin-bottom: 1rem;
+}
+.main .box .left_box p {
+  font-size: 0.8rem;
+  line-height: 2em;
+}
+.main .box .left_box .top {
+  margin-bottom: 2rem;
+}
+.main .box .right_box {
+  padding: 4rem;
+}
+.main .box .right_box .main_box img {
+  width: 100%;
+}
+
+.section {
+  height: 15rem;
+}
+.section .bg {
+  height: 15rem;
+  background-color: hsl(240deg, 10%, 16%);
 }/*# sourceMappingURL=style.css.map */

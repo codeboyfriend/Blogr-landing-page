@@ -1,10 +1,11 @@
+import Logo from "./../../assets/images/logo.svg";
 import arrow_up from "./../../assets/images/icon-arrow-light.svg";
 
 const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="logo">
-        Blogr
+        <img src={Logo} alt="" />
       </div>
 
       <div className="mobile">
@@ -19,11 +20,21 @@ const Navbar = () => {
         </div>
 
         <div className="extension link">
-          <p>Company</p>          
+        <p>
+            Company
+            <span className="arrow">
+              <img src={arrow_up} alt="" />
+            </span>
+          </p>            
         </div>
 
         <div className="extension link">
-          <p>Connect</p>          
+        <p>
+            Connect
+            <span className="arrow">
+              <img src={arrow_up} alt="" />
+            </span>
+          </p>      
         </div>
       </div>
 
