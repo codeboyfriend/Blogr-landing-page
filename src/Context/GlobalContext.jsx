@@ -1,10 +1,14 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 const BlogrContext = createContext();
 
 export const BlogrProvider = ({ children }) => {
+    const [open, setOpen] = useState(false)
     return (
-        <BlogrContext.Provider>
+        <BlogrContext.Provider value = {{
+            open,
+            setOpen
+        }}>
             { children }
         </BlogrContext.Provider>
     )

@@ -1,7 +1,11 @@
 import Logo from "./../../assets/images/logo.svg";
 import arrow_up from "./../../assets/images/icon-arrow-light.svg";
+import BlogrContext from "../../Context/GlobalContext";
+import { useContext } from "react";
 
 const Navbar = () => {
+  const { open, setOpen} = useContext(BlogrContext);
+
   return (
     <div className='navbar'>
       <div className="logo">
@@ -43,6 +47,15 @@ const Navbar = () => {
         <div className='btn btn_One'>Register</div>
       </div>
       </div>
+
+      {
+        open ? 
+        <div className="modal">
+          <p>Contact</p>
+          <p>Newsletter</p>
+          <p>LinkedIn</p>
+        </div> : ""
+      }
     </div>
   )
 }
