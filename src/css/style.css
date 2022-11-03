@@ -236,4 +236,16 @@ html::-webkit-scrollbar-thumb {
 .footer p:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
+}
+
+.modal {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(208deg, 49%, 24%);
+  padding: 15px 25px 15px 15px;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

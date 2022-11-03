@@ -32,7 +32,7 @@ const Navbar = () => {
           </p>            
         </div>
 
-        <div className="extension link">
+        <div className="extension link" onClick={() => setOpen(!open)}>
         <p>
             Connect
             <span className="arrow">

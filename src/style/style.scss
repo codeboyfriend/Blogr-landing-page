@@ -281,3 +281,15 @@ html::-webkit-scrollbar-thumb {
         }
     }
 }
+
+.modal {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: $white;
+    color: $veryDarkBlue;
+    padding: 15px 25px 15px 15px;
+    line-height: 1.5em;
+    font-size: .8rem;
+    border-radius: 5px;
+}
