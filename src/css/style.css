@@ -240,7 +240,7 @@ html::-webkit-scrollbar-thumb {
 
 .modal {
   position: absolute;
-  top: 5rem;
+  top: 0;
   left: 0;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(208deg, 49%, 24%);

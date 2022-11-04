@@ -5,7 +5,7 @@ import { useContext } from "react";
 
 const Navbar = () => {
   const { open, setOpen} = useContext(BlogrContext);
-
+  
   return (
     <div className='navbar'>
       <div className="logo">
@@ -46,16 +46,7 @@ const Navbar = () => {
         <div className="btn">Login</div>
         <div className='btn btn_One'>Register</div>
       </div>
-      </div>
-
-      {
-        open ? 
-        <div className="modal">
-          <p>Contact</p>
-          <p>Newsletter</p>
-          <p>LinkedIn</p>
-        </div> : ""
-      }
+      </div>   
     </div>
   )
 }

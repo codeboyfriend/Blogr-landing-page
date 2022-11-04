@@ -5,6 +5,7 @@ import Main from "./components/sub_com/Main";
 import Section from "./components/sub_com/Section";
 import Article from "./components/sub_com/Article";
 import Footer from "./components/sub_com/Footer";
+import MobileNav from "./components/sub_com/MobileNav";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Section />
         <Article />
         <Footer />
+        <MobileNav />
       </div>
     </BlogrProvider>
   )

@@ -284,7 +284,8 @@ html::-webkit-scrollbar-thumb {
 
 .modal {
     position: absolute;
-    top: 5rem;
+    // top: 5rem;
+    top: 0;
     left: 0;
     background-color: $white;
     color: $veryDarkBlue;
