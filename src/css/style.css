@@ -240,12 +240,20 @@ html::-webkit-scrollbar-thumb {
 
 .modal {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 4rem;
+  left: 22rem;
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(208deg, 49%, 24%);
-  padding: 15px 25px 15px 15px;
-  line-height: 1.5em;
+  padding: 15px 40px 15px 15px;
+  line-height: 2em;
   font-size: 0.8rem;
   border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+.modal p {
+  cursor: pointer;
+}
+.modal p:hover {
+  font-weight: 700;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
